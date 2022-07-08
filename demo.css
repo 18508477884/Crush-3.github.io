@@ -1,0 +1,107 @@
+.f {
+    display: flex;
+    display: -webkit-flex;
+    /* 设置为flex布局 */
+}
+
+.f-a-c {
+    align-items: center;
+    /* 交叉轴上如何对齐，每个div中心轴对齐 */
+}
+
+.f-a-b {
+    align-items: baseline;
+    /* 交叉轴上如何对齐，每个div中的第一行文字的基线（底部）对齐 */
+}
+
+.f-d-c {
+    flex-direction: column;
+    /* 排列方式，垂直 */
+}
+
+.f-w-w {
+    flex-wrap: wrap;
+    /* 换行方式 */
+}
+
+.f-j-c {
+    justify-content: center;
+    /* 居中 */
+}
+
+.f-j-b {
+    justify-content: space-between;
+    /* 两边排列 */
+}
+
+.f-j-a {
+    justify-content: space-around;
+    /* 靠近两边，没有接触到旁边 */
+}
+
+.f-j-s {
+    justify-content: start;
+    /* 靠近左侧 */
+}
+
+.f-s-0 {
+    flex-shrink: 0;
+    /* 空间不足时也不被缩放,默认值为1会被缩放 */
+}
+
+.f-d-r {
+    flex-direction: row;
+    /*//水平布局*/
+
+}
+
+.f-d-c {
+    flex-direction: column;
+    /*垂直布局*/
+}
+
+video::-webkit-media-controls {
+    /*全屏操作后  自带的控制栏会显示  在显示的时候隐藏*/
+    display: none !important;
+}
+
+.controls {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 100px;
+    position: relative;
+}
+
+.media {
+    width: 100%;
+}
+
+.control {
+    /*比全屏的状态下的视频元素高*/
+    z-index: 2147483647;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+.pause {
+    display: none;
+}
+
+.schedule input {
+    width: 100%;
+}
+
+.control-function {
+    padding: 10px 0;
+}
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-right-20 {
+    margin-right: 20px;
+}

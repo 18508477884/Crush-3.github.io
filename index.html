@@ -1,309 +1,82 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>罗亚明的个人网站</title>
-		<meta name="viewport" content="width=device-width,maximum-scale=1.0, user-scalable=no">
-		<meta name="keywords" content="数独，游戏">
-		<link rel="stylesheet" href="css/index.css">
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
+<html lang="zh">
 
-			li {
-				list-style: none;
-			}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H5播放器演示</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
 
-			input {
-				outline: none;
-			}
+<body>
+    <div class="main">
+        <div class="controls">
+            <video class="media J_kpMedia">
+                <source src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-1080p.mp4" type="video/mp4"
+                  >
+                <source src="japan8k.mp4" type="video/mp4">
+                <source src="https://api.dogecloud.com/player/get.mp4?vcode=5ac682e6f8231991&userId=17&ext=.mp4"
+                    type="video/ogg" codecs="theora,vorbis">
+                <source src="/media/cc0-videos/flower.webm" type="video/webm">
+                抱歉，您的浏览器不支持嵌入视频。
+            </video>
+            <div class="control f f-d-c">
+                <div class="schedule"><input type="range"></div>
+                <div class="control-function f f-j-b">
+                    <div class="f">
+                        <div class="play margin-left-20">
+                            <svg t="1657079719302" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="5806" width="20" height="20">
+                                <path
+                                    d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"
+                                    p-id="5807" fill="#ffffff"></path>
+                            </svg>
+                        </div>
+                        <div class="pause margin-left-20">
+                            <svg t="1657079768017" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="6800" width="20" height="20">
+                                <path
+                                    d="M379.337561 118.348432 145.347343 118.348432c-8.113795 0-16.247033 3.097548-22.444175 9.295714-6.197142 6.1777-9.295714 14.309914-9.295714 22.424732l0 729.759559c0 8.094352 3.098571 16.22759 9.295714 22.424732 6.197142 6.176676 14.33038 9.276271 22.444175 9.276271l233.990219 0c8.113795 0 16.247033-3.098571 22.444175-9.276271 6.1777-6.197142 9.275247-14.33038 9.275247-22.424732l0-729.760582c0-8.112772-3.098571-16.247033-9.275247-22.424732C395.584594 121.447003 387.451356 118.348432 379.337561 118.348432L379.337561 118.348432zM897.531634 127.643122c-6.197142-6.197142-14.33038-9.295714-22.444175-9.295714L641.09724 118.347408c-8.113795 0-16.247033 3.098571-22.444175 9.295714-6.196119 6.1777-9.295714 14.31196-9.295714 22.424732l0 729.759559c0 8.094352 3.099594 16.22759 9.295714 22.424732 6.197142 6.176676 14.33038 9.275247 22.444175 9.275247l233.990219 0c8.113795 0 16.247033-3.098571 22.444175-9.275247 6.197142-6.197142 9.275247-14.33038 9.275247-22.424732L906.806881 150.067854C906.806881 141.954059 903.727753 133.821845 897.531634 127.643122L897.531634 127.643122z"
+                                    p-id="6801" fill="#ffffff"></path>
+                            </svg>
+                        </div>
+                        <div class="volume margin-left-20">
+                            <svg t="1657080626267" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="9628" width="20" height="20">
+                                <path
+                                    d="M526.432 924.064c-20.96 0-44.16-12.576-68.96-37.344L274.752 704H192c-52.928 0-96-43.072-96-96V416c0-52.928 43.072-96 96-96h82.752l182.624-182.624c24.576-24.576 47.744-37.024 68.864-37.024C549.184 100.352 576 116 576 160v704c0 44.352-26.72 60.064-49.568 60.064zM687.584 730.368a31.898 31.898 0 0 1-18.656-6.016c-14.336-10.304-17.632-30.304-7.328-44.672l12.672-17.344C707.392 617.44 736 578.624 736 512c0-69.024-25.344-102.528-57.44-144.928-5.664-7.456-11.328-15.008-16.928-22.784-10.304-14.336-7.04-34.336 7.328-44.672 14.368-10.368 34.336-7.04 44.672 7.328 5.248 7.328 10.656 14.464 15.968 21.504C764.224 374.208 800 421.504 800 512c0 87.648-39.392 141.12-74.144 188.32l-12.224 16.736c-6.272 8.704-16.064 13.312-26.048 13.312z"
+                                    p-id="9629" fill="#ffffff"></path>
+                                <path
+                                    d="M796.448 839.008a31.906 31.906 0 0 1-21.088-7.936c-13.28-11.648-14.624-31.872-2.976-45.152C836.608 712.672 896 628.864 896 512s-59.392-200.704-123.616-273.888c-11.648-13.312-10.304-33.504 2.976-45.184 13.216-11.648 33.44-10.336 45.152 2.944C889.472 274.56 960 373.6 960 512s-70.528 237.472-139.488 316.096c-6.368 7.232-15.2 10.912-24.064 10.912z"
+                                    p-id="9630" fill="#ffffff"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="f">
+                        <div class="set margin-right-20">
+                            <svg t="1657080880223" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="14185" width="20" height="20">
+                                <path
+                                    d="M940 596l-76-57.6c0.8-8 1.6-16.8 1.6-26.4s-0.8-18.4-1.6-26.4l76-57.6c20.8-16 26.4-44 12.8-68l-84.8-143.2c-9.6-16.8-28-27.2-47.2-27.2-6.4 0-12 0.8-18.4 3.2L712 228c-15.2-10.4-31.2-19.2-47.2-26.4l-13.6-92c-4-26.4-26.4-45.6-53.6-45.6H426.4c-27.2 0-49.6 19.2-53.6 44.8L360 201.6c-16 7.2-31.2 16-47.2 26.4l-90.4-35.2c-6.4-2.4-12.8-3.2-19.2-3.2-19.2 0-37.6 9.6-46.4 26.4L71.2 360c-13.6 22.4-8 52 12.8 68l76 57.6c-0.8 9.6-1.6 18.4-1.6 26.4s0 16.8 1.6 26.4l-76 57.6c-20.8 16-26.4 44-12.8 68l84.8 143.2c9.6 16.8 28 27.2 47.2 27.2 6.4 0 12-0.8 18.4-3.2L312 796c15.2 10.4 31.2 19.2 47.2 26.4l13.6 92c3.2 25.6 26.4 45.6 53.6 45.6h171.2c27.2 0 49.6-19.2 53.6-44.8l13.6-92.8c16-7.2 31.2-16 47.2-26.4l90.4 35.2c6.4 2.4 12.8 3.2 19.2 3.2 19.2 0 37.6-9.6 46.4-26.4l85.6-144.8c12.8-23.2 7.2-51.2-13.6-67.2zM704 512c0 105.6-86.4 192-192 192S320 617.6 320 512s86.4-192 192-192 192 86.4 192 192z"
+                                    p-id="14186" fill="#ffffff"></path>
+                            </svg>
+                        </div>
+                        <div class="full-screen margin-right-20">
+                            <svg t="1657081260016" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                                xmlns="http://www.w3.org/2000/svg" p-id="21448" width="20" height="20">
+                                <path
+                                    d="M859.1 64.7H685.3c-6.6 0-12.9 2.6-17.6 7.3-4.7 4.7-7.3 11-7.3 17.6v49.7c0 6.6 2.6 12.9 7.3 17.6 4.7 4.7 11 7.3 17.6 7.3h173.8V338c0 6.6 2.6 12.9 7.3 17.6 4.7 4.7 11 7.3 17.6 7.3h49.7c6.6 0 12.9-2.6 17.6-7.3 4.7-4.7 7.3-11 7.3-17.6V164c0-26.3-10.5-51.6-29.1-70.2-18.8-18.7-44-29.1-70.4-29.1zM64.5 164v173.8c0 13.7 11.1 24.8 24.8 24.8H139c13.7 0 24.8-11.1 24.8-24.8V164h173.8c13.7 0 24.8-11.1 24.8-24.8V89.5c0-13.7-11.1-24.8-24.8-24.8H163.8c-54.8 0-99.3 44.4-99.3 99.3z m794.6 521.5v173.8H685.3c-6.6 0-12.9 2.6-17.6 7.3-4.7 4.7-7.3 11-7.3 17.6v49.7c0 6.6 2.6 12.9 7.3 17.6 4.7 4.7 11 7.3 17.6 7.3h173.8c26.3 0 51.6-10.5 70.2-29.1s29.1-43.9 29.1-70.2v-174c0-6.6-2.6-12.9-7.3-17.6-4.7-4.7-11-7.3-17.6-7.3H884c-6.6 0-12.9 2.6-17.6 7.3-4.7 4.7-7.3 11-7.3 17.6zM139 660.6H89.3c-6.6 0-12.9 2.6-17.6 7.3-4.7 4.7-7.3 11-7.3 17.6v173.8c0 26.3 10.5 51.6 29.1 70.2s43.9 29.1 70.2 29.1h173.8c6.6 0 12.9-2.6 17.6-7.3 4.7-4.7 7.3-11 7.3-17.6V884c0-6.6-2.6-12.9-7.3-17.6-4.7-4.7-11-7.3-17.6-7.3H163.8V685.5c0-6.6-2.6-12.9-7.3-17.6-4.6-4.6-10.9-7.3-17.5-7.3z m0 0"
+                                    fill="#ffffff" p-id="21449"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
 
-			[v-cloak] {
-				display: none;
-			}
 
-			#sudo {
-				position: relative;
-				height: 100%;
-			}
-
-			.btnbox {
-				padding-top: 48px;
-				text-align: center;
-			}
-
-			.tableList {
-				margin-top: 3rem;
-				text-align: center;
-			}
-
-			.item {
-				float: left;
-				width: 50%;
-			}
-
-			.table {
-				display: inline-block;
-				border: 1px solid #000000;
-				box-sizing: border-box;
-			}
-
-			.table ul {
-				display: flex;
-				width: 20rem;
-				height: 2.5rem;
-				box-sizing: border-box;
-			}
-
-			.table ul li {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				flex: 1;
-				border-right: 1px dashed #cccccc;
-				border-bottom: 1px dashed #cccccc;
-				box-sizing: border-box;
-			}
-
-			.table ul:nth-child(3) li,
-			.table ul:nth-child(6) li {
-				border-bottom: 1px solid #000000;
-			}
-
-			.table ul:nth-child(9) li {
-				border-bottom: none;
-			}
-
-			.table ul li:nth-child(9) {
-				border-right: none;
-			}
-
-			.table ul li:nth-child(3),
-			.table ul li:nth-child(6) {
-				border-right: 1px solid #000000;
-			}
-
-			.table ul li span {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				height: 100%;
-				color: #0051dd;
-				font-size: 20px;
-				font-weight: bold;
-			}
-
-			.table ul li input {
-				border: none;
-				width: 30px;
-				height: 30px;
-				text-align: center;
-				color: #cc00ff;
-				font-size: 20px;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="sudo">
-			<div class="btnbox">
-				<el-button :type="hard == 3 ? 'primary': ''" @click="change(3)">简单</el-button>
-				<el-button :type="hard == 5 ? 'primary': ''" @click="change(5)">一般</el-button>
-				<el-button :type="hard == 7 ? 'primary': ''" @click="change(7)">困难</el-button>
-			</div>
-			<div class="tableList">
-				<el-row>
-					<el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
-						<div class="table">
-							<ul v-for="(row,index) in dataList" :key="index">
-								<li v-for="(col, ind) in row" :key="ind">
-									<span v-if="col.disabled">{{col.value}}</span>
-									<input maxlength="1" onkeypress="return (/[\d]/.test(String.fromCharCode(event.keyCode)))" style="ime-mode:Disabled"
-									 v-else v-model="dataList[index][ind].value">
-								</li>
-							</ul>
-						</div>
-						<div class="btnbox">
-							<el-button @click="save">提交</el-button>
-							<el-button @click="showAnswer">{{isShowAnswer? '隐藏答案': '显示答案'}}</el-button>
-						</div>
-					</el-col>
-					<el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12" v-show="isShowAnswer">
-						<div class="table">
-							<ul v-for="(row,index) in gridList" :key="index">
-								<li v-for="(col, ind) in row" :key="ind">
-									<span>{{gridList[index][ind]}}</span>
-								</li>
-							</ul>
-						</div>
-					</el-col>
-				</el-row>
-			</div>
-		</div>
-	</body>
-	<script src="https://www.jq22.com/jquery/vue.min.js"></script>
-	<script src="js/index.js"></script>
-	<script>
-		new Vue({
-			el: '#sudo',
-			data: () => {
-				return {
-					gridList: [],
-					dataList: [],
-					numArr: [1, 2, 3, 4, 5, 6, 7, 8, 9],
-					hard: 3, //3代表每一行需要填写3个数字
-					isShowAnswer: false,
-				}
-			},
-			created() {
-				this.createGridList(this.hard); //(3:简单;5:一般;7:困难)
-			},
-			methods: {
-				createGridList(hard) { //创建3x3表格
-					for (let i = 0; i < 9; i++) {
-						this.gridList.push([]);
-						for (let j = 0; j < 9; j++) {
-							this.gridList[i].push(0);
-						}
-					}
-					this.init1row(hard);
-				},
-				random1_9Arr(arr) { //数组1-9随机打乱
-					arr.sort(() => {
-						return Math.random() - 0.5;
-					});
-					return arr;
-				},
-				init1row(hard) {
-					this.gridList[0] = this.random1_9Arr(this.numArr); //第一行赋值
-					this.setAllValue(this.gridList, 1, 0, hard); //第二至九行赋值
-				},
-				setAllValue(arr, row, col, hard) {
-					if (col == 9) {
-						return this.setAllValue(arr, row + 1, 0, hard);
-					}
-					if (row == 9) {
-						return true;
-					}
-					for (let i = row; i < 9; i++) {
-						for (let j = col; j < 9; j++) {
-							if (arr[i][j] != 0) {
-								return this.setAllValue(arr, i, j + 1, hard);
-							}
-							for (let ch = 1; ch <= 9; ch++) {
-								if (this.isValidNum(arr, i, j, ch)) {
-									arr[i][j] = ch;
-									if (this.setAllValue(arr, i, j + 1, hard)) {
-										if (row == 8 && col == 8) {
-											this.setDataList(JSON.parse(JSON.stringify(arr)), hard);
-										}
-										return true;
-									} else {
-										arr[i][j] = 0;
-									}
-								}
-							}
-							return false;
-						}
-					}
-					return false;
-				},
-				isValidNum(arr, row, col, index) { // 判断 gridList[i][j] 是否可以填入index
-					for (let i = 0; i < 9; i++) {
-						// 判断行是否存在重复
-						if (arr[row][i] == index) {
-							return false;
-						};
-						// 判断列是否存在重复
-						if (arr[i][col] == index) {
-							return false;
-						};
-						// 判断 3 x 3 方框是否存在重复
-						let _row = parseInt(row / 3) * 3 + parseInt(i / 3);
-						let _col = parseInt(col / 3) * 3 + (i % 3);
-						if (arr[_row][_col] == index) {
-							return false;
-						}
-					}
-					return true;
-				},
-				setDataList(arr, hard) {
-					let list = this.random1Or0Arr(hard);
-					for (let i = 0; i < arr.length; i++) {
-						this.dataList[i] = [];
-						for (let j = 0; j < arr[i].length; j++) {
-							let random = list[i][j];
-							this.dataList[i][j] = {
-								disabled: random,
-								value: random ? arr[i][j] : ''
-							};
-						}
-					}
-				},
-				random1Or0Arr(hard) {
-					let arr = [];
-					for (let i = 0; i < 9; i++) {
-						arr.push([]);
-						let trueArr = [];
-						for (let j = 0; j < 9; j++) {
-							if (trueArr.length < hard) {
-								arr[i].push(false);
-								trueArr.push(1);
-							} else {
-								arr[i].push(true);
-							}
-							arr[i].sort(() => {
-								return Math.random() > .5 ? -1 : 1;
-							})
-						}
-					}
-					return arr
-				},
-				change(hard) {
-					this.hard = hard;
-					this.gridList = [];
-					this.dataList = [];
-					this.createGridList(hard);
-				},
-				save() {
-					let arr = [];
-					for (let i = 0; i < 9; i++) {
-						arr.push([]);
-						for (let j = 0; j < 9; j++) {
-							arr[i].push(Number(this.dataList[i][j].value))
-						}
-					}
-					let count = 0;
-					for (let i = 0; i < 9; i++) {
-						if (arr[i].toString() == this.gridList[i].toString()) {
-							count++;
-						}
-					}
-					let msg = '';
-					if (this.hard === 3) {
-						msg = '模式：简单，';
-					} else if (this.hard === 5) {
-						msg = '模式：一般，';
-					} else if (this.hard === 5) {
-						msg = '模式：困难，';
-					}
-					if (count === 9) {
-						this.$message({
-							message: msg + '挑战成功',
-							type: 'success'
-						});
-					} else {
-						this.$message({
-							message: msg + '挑战失败',
-							type: 'error'
-						});
-					}
-				},
-				showAnswer() {
-					this.isShowAnswer = !this.isShowAnswer;
-				},
-			}
-		})
-	</script>
 </html>
